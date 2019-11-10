@@ -103,9 +103,12 @@
                         email: this.form.email,
                     }).then(response => {
                         if(typeof response.data.checked!=="undefined"){
+                            this.helpers.email.show = true;
                             this.helpers.email.text = response.data.message;
                             this.helpers.email.check = response.data.checked;
-                            this.helpers.email.error = false;
+                            if (response.data.checked==false)
+                                this.helpers.email.error = true;
+                            else this.helpers.email.error = false;
                         }
                     })
                 }else {

@@ -23,7 +23,7 @@ class AuthController extends Controller{
             $user = Auth::user();
             $this->guard()->login($user);
 
-            return response()->json(['logged'=>true]);
+            return response()->json(['logged'=>true,'redirect'=>route('home')]);
         }
         return response()->json([
             'logged' => false,

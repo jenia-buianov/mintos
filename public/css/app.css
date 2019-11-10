@@ -5942,10 +5942,46 @@ readers do not read off random characters that represent icons */
   border-color: #dc3545 !important;
 }
 
+.words {
+  margin-bottom: 6rem;
+}
+
+.feed {
+  font-size: 13px;
+}
+
+.feed .col-md-4 {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.feed .description {
+  margin-top: 1.5rem;
+}
+
+.feed a.text-info {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.feed a.text-info:hover {
+  color: #28a745 !important;
+}
+
 h2 {
   margin-bottom: 5rem;
   text-align: center;
   margin-top: -3rem;
+}
+
+.p-right {
+  float: right;
+}
+
+h4 {
+  font-size: 1.15rem;
+  color: #9a9a9a;
 }
 
 .hidden {
